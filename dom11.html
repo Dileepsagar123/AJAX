@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>EventListener</title>
+   
+</head>
+<button id="listener">Try Me</button>
+
+<p id="display"></p>
+
+<script>
+        document.getElementById("listener").addEventListener("click", displayDate);
+
+        function displayDate() 
+        {
+            document.getElementById("display").innerHTML = Date();
+        }
+    </script>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+   
+</head>
+<body>
+    <h1 id="parent">This is paragraph</h1>
+    <p id="copiedText"></p>
+    <h1 id="copiedText1"></h1>
+    <div id="copiedText2"></div>
+    <script>
+            //document.getElementById("parent").firstChild.nodeValue;
+            //this is same as above
+            //document.getElementById("parent").innerHTML;
+            document.getElementById("copiedText").innerHTML = document.getElementById("parent").innerHTML; 
+            document.getElementById("copiedText1").innerHTML = document.getElementById("parent").innerHTML;  
+            document.getElementById("copiedText2").innerHTML = document.getElementById("parent").innerHTML; 
+        </script>
+</body>
+</html>
